@@ -5,17 +5,116 @@
         <title>Test Project</title>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="">
-        <script src="./js/script.js"></script>
     </head>
     <body>
-        <header>
-
+        <header class="header-container">
+            <div class="header-container_logo-container">
+                <span>
+                    АЛИСА 
+                    САВИНИНА
+                </span>
+                <span>
+                    Диетолог
+                </span>
+            </div>
+            <nav class="navigation-container"> 
+                <ul class="navigation-container_navigation-list">
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Обо мне</a>
+                    </li>
+                    <li>
+                        <a href="#">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#">Блог</a>  
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="navigation-container_social-network">
+                    <a href="#">
+                        <img src="./image/sprites/vk-social-network-logo.png"
+                        alt="VK">                       
+                    </a>
+                    <a href="">
+                        <img src="./image/sprites/facebook-logo.png" 
+                        alt="Facebbok">
+                    </a>
+                    <a href="">
+                        <img src="./image/sprites/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="">
+                        <img src="./image/sprites/instagram-logo.png" 
+                        alt="instagram">
+                    </a>
+                </div>
+            </nav>
         </header>
         <main>
-
+            <section class="main-container">
+                <div class="main-container_section">
+                    <h3 class="main-container_text">
+                        «Пусть еда будет вашим лекарством,
+                        а лекарство — едой».
+                    </h3>
+                    <button id="service-button" class="main-container_button_service">
+                        Заказть услугу
+                    </button>
+                </div>
+            </section>
+            <section class="summary-container">
+                <div class="summary-container_photo">
+                    <img src="./image/Women.jpg" alt="Dietolog">
+                </div>
+                <div class="summary-container_summary">    
+                    <article class="summary-container_article">
+                        <span class="summary-container_name"
+                            >Диетолог Алиса Савина
+                        </span>
+                        <p class="summary-container_summary-text">
+                        Это текст. Нажмите один раз и выберите 
+                        «Редактировать текст» или просто кликните дважды, 
+                        чтобы добавить свой текст и настроить шрифт. 
+                        Расскажите посетителям сайта о себе. 
+                        Здесь будет удачно смотреться текст
+                         о вашей компании и услугах. 
+                    ​   </p>
+                    </article>
+                    <div class="summary-container-reference_next">
+                        <a href="#">Читать дальше ></a>
+                    </div>
+                </div>
+            </section>
+            <section class="recipe-container">
+                <div class="recipe-container_main">
+                    <div class="recipe-container_blog">
+                        <span><p>Блог</p></span>
+                    </div>
+                    <div class="recipe-container_advice">
+                        <a href="#" class="recipe-container_advice-reference">
+                            Советы и рецепты 
+                        </a>
+                        <article class="recipe-container_advice-article">
+                            <p>
+                                Это текст. Нажмите один раз и выберите 
+                                «Редактировать текст» или просто кликните дважды,
+                                чтобы добавить свой текст и настроить шрифт.
+                            </p>
+                        </article>
+                    </div>
+                </div>  
+                <div class="recipe-container-image">
+                    <img src="./image/salat.jpg" alt="Salat">
+                </div>
+            </section>
         </main>
         <footer>
             
         </footer>
+        <script src="./js/script.js"></script>
     </body>
 </html>

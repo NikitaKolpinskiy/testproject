@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    
 }
 
 html, body {
@@ -11,6 +10,7 @@ html, body {
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .header-container {
@@ -106,7 +106,6 @@ ul {
     flex-direction: column;
     background-color: rgb(240,240,240);
     padding: 10% 10% 0% 10%;
-    
 }
 
 .summary-container-reference_next a {
@@ -118,7 +117,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     padding: 0% 10% 0% 10%; 
-   
 }
 
 .recipe-container_main {
@@ -129,8 +127,7 @@ ul {
 .recipe-container_blog {
   display: flex;
   justify-content: flex-end;
-  width: 370px;
-  
+  width: 370px; 
 }
 
 .recipe-container_blog span  {
@@ -175,7 +172,6 @@ ul {
 .consultation-container {
     display: flex;
     padding: 0% 10% 0% 10%; 
-    height: 100%;
 }
 
 .consultation-container-text-image {
@@ -192,6 +188,7 @@ ul {
     height: 148px;
     background-color: rgb(175,200,72);
 }
+
 .consultation-container-text :hover {
     background-color: seagreen;
     transition: 0.3s ease-in-out all;
@@ -203,6 +200,11 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.consultation-container-image {
+    display: flex;
+    align-items: flex-end;   
 }
 
 .consultation-container-image img {
@@ -220,7 +222,47 @@ ul {
     padding: 0% 10% 0% 10%;
 }
 
-   
+footer {
+    height: 300px;
+    background-image: url(../image/doski.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 10% 0% 10%;
+}
+
+.footer-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    text-align: center;
+    align-items: center;  
+}
+
+.footer-contacts_signature {
+    grid-column-start: 2;
+}
+
+.footer-contacts_name {
+    display: grid;
+    height: 100%;
+    border-right: 1px white solid;
+    border-left: 1px white solid;
+}
+
+.footer-contacts_name a {
+    align-self: center;
+    justify-self: center;
+}
+
+.footer-contacts p {
+    margin: 0;
+}
+
+.footer-contacts img {
+    width: 25px;
+    height: 25px;
+}
 
 
 

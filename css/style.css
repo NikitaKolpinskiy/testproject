@@ -15,8 +15,9 @@ ul {
 
 .header-container {
     height: 105px;
-    padding: 0% 10% 0% 10%;
+    padding: 0% 15% 0% 15%;
     display: flex;
+    
 }
 
 .header-container_logo-container {
@@ -24,8 +25,21 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 228px;
-    background-color: blanchedalmond;
+    width: 300px;
+    background-color: rgb(173,199,67);
+    height: 96%;
+}
+
+.header-container_logo_name {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.header-container_logo_position {
+    font: normal normal normal 14px/1.4em 'open sans',sans-serif;
+    opacity: 0.6;
 }
 
 .navigation-container {
@@ -33,29 +47,37 @@ ul {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: rgb(209, 255, 205);
+    
 }
 
 .navigation-container_navigation-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
-    background-color: coral;
+    width: 60%;
+    padding-left: 5%;
 }
 
-.navigation-container_navigation-list li a {
+.navigation-container_navigation-list li a{
     text-decoration: none;
-    color: black;
+    color: rgb(114,112,112);
+    font: normal normal normal 15.5px/1.4em 'open sans',sans-serif;
 }
 
-.navigation-container_social-network {
-    background-color: blueviolet;
+.navigation-container_navigation-list li  :hover {
+    color: rgb(205,205,205);
+    transition: 0.2s ease-in-out all;
 }
+
+.navigation-container_social-network a {
+    text-decoration: none;
+}
+
 
 .main-container {
-    padding: 0% 10% 0% 10%;
+    padding: 0% 15% 0% 15%;
     background: url(../image/ovos.jpg) no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     height: 600px;
 }
@@ -71,7 +93,9 @@ ul {
 }
 
 .main-container_text {
-    font-size: 36px;
+    color: rgb(85,83,83);
+    font: normal normal normal 2.7em droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif;
+    
 }
 
 .main-container_button_service {
@@ -81,6 +105,13 @@ ul {
     height: 46px;
     width: 165px;
     color: white;
+    font: normal normal normal 1em 'open sans',sans-serif;
+    font-weight: bold;
+}
+
+.main-container_button_service:hover {
+    background-color: rgb(78, 149, 54);
+    transition: 0.2s ease-in-out all;
 }
 
 .button-disabled {
@@ -89,13 +120,12 @@ ul {
 
 .summary-container {
     display: flex;
-    padding: 0% 10% 0% 10%; 
+    padding: 0% 15% 0% 15%; 
 }
 
-
-.summary-container_photo img {
+.summary-container img {
     width: 370px;
-    height: 100%;
+    height: 447px;
 }
 
 .summary-container_summary {
@@ -106,73 +136,97 @@ ul {
     flex-direction: column;
     background-color: rgb(240,240,240);
     padding: 10% 10% 0% 10%;
+    color: rgb(109,107,107);
+}
+
+.summary-container_name {
+    font: normal normal normal 22px/1.4em droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif;
+    color: rgb(85,83,83);
+    
 }
 
 .summary-container-reference_next a {
    color: rgb(175,200,72); 
    text-decoration: none;
+   font: normal normal normal 17px/1.4em droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif;
 }
+
+.summary-container-reference_next :hover {
+    color: rgb(71, 153, 50);
+    transition: 0.2s ease-in-out all;
+}
+
 
 .recipe-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 0% 10% 0% 10%; 
+    padding: 0% 15% 0% 15%; 
 }
 
 .recipe-container_main {
     display: flex;
-    width: 100%;
 }
 
 .recipe-container_blog {
-  display: flex;
-  justify-content: flex-end;
-  width: 370px; 
+    display: flex;
+    justify-content: flex-end;
+    width: 370px;
+
 }
 
-.recipe-container_blog span  {
+.recipe-container_text{
+    cursor: pointer;
     height: 147px;
     width:  147px;
-    background-color: gray;
-}
-
-.recipe-container_blog span :hover {
-    background-color: rosybrown;
-    transition: 0.3s ease-in-out all;
-}
-
-.recipe-container_blog span p {
+    background-color: rgb(172,162,152);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+    color: white;
+    font: normal normal normal 22px/1.4em droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif;
+}
+
+.recipe-container_text:hover {
+    background-color: rgb(117, 116, 116);
+    transition: 0.3s ease-in-out all;
 }
 
 .recipe-container_advice {
     display: flex;
     justify-content: center;
-    padding: 0% 10% 0% 10%;
     flex-direction: column;
-    width: 50%;
+    padding: 0% 5% 0% 5%;
+    width: 46%;
     height: 258px;
     background-color: rgb(175,200,72);
+    color: white;
 }
 
-.recipe-container-image {
+
+.recipe-container_advice a {
+    color: white;
+    text-decoration: none;
+}
+
+.recipe-container_advice-reference {
+    font: normal normal normal 22px/1.4em droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif;
+}
+
+.recipe-container_advice-article {
+    font: normal normal normal 15px/1.4em 'open sans',sans-serif;
+}
+
+.recipe-container img {
     height: 470px;
+    width: 748px;
 }
 
-.recipe-container-image img {
-    width: 748px;
-    height: 100%;
-}
 
 .consultation-container {
     display: flex;
-    padding: 0% 10% 0% 10%; 
+    padding: 0% 15% 0% 20%; 
 }
+
 
 .consultation-container-text-image {
     display: flex;
@@ -184,23 +238,23 @@ ul {
 }
 
 .consultation-container-text {
+    cursor: pointer;
     width: 148px;
     height: 148px;
     background-color: rgb(175,200,72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font: normal normal normal 22px/1.4em droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif;
 }
 
-.consultation-container-text :hover {
+.consultation-container-text:hover {
     background-color: seagreen;
     transition: 0.3s ease-in-out all;
 }
 
-.consultation-container-text span {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .consultation-container-image {
     display: flex;
@@ -213,21 +267,34 @@ ul {
 }
 
 .service-container {
-    width: 60%;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(240,240,240);
     padding: 0% 10% 0% 10%;
+    
+}
+
+.service-container a {
+    color: #555353;
+    text-decoration: none;
+    font: normal normal normal 22px/1.4em droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif;
+}
+
+.service-container-text {
+    color: rgb(109,107,107);
+    font: normal normal normal 15px/1.4em 'open sans',sans-serif;
 }
 
 footer {
     height: 300px;
     background-image: url(../image/doski.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5% 10% 0% 10%;
+   
 }
 
 .footer-contacts {
@@ -236,7 +303,13 @@ footer {
     grid-template-rows: 1fr 1fr;
     height: 100%;
     text-align: center;
-    align-items: center;  
+    align-items: center;
+    color: white;
+}
+
+.footer-contacts a {
+    text-decoration: none;
+    color: white;
 }
 
 .footer-contacts_signature {
@@ -248,6 +321,7 @@ footer {
     height: 100%;
     border-right: 1px white solid;
     border-left: 1px white solid;
+    font: normal normal normal 21px/1.4em droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif;
 }
 
 .footer-contacts_name a {
